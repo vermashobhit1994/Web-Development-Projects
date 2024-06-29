@@ -1,3 +1,7 @@
 body{
 	background: #9333FF;
+	height: 97vh;
+	display:flex;
+	align-items: center;
+	justify-content: center;
 }
