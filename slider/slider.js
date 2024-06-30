@@ -13,6 +13,7 @@ let currentImageColor = document.querySelector("document.body")
 
 let colorsList = ["#9333FF", "#00ff6c",  "#1d2c73", "#a5533f" ] ;
 
+let framewidth = document.querySelector(".frame").clientWidth;
 
 const bottom = document.querySelector(".bottom");
 
@@ -38,7 +39,7 @@ const resetBackgroundColor = () =>{
 buttons.forEach( (button, i) =>{
 	button.addEventListener("click", ()=>{
 		resetBackgroundColor();
-		sliderWindow.style.transform = `translate(-${i * 800}px)` ;
+		sliderWindow.style.transform = `translate(-${i * framewidth}px)` ;
 		sliderNum = i+1;
     button.style.backgroundColor = "#FFFFFF";
 
@@ -47,12 +48,12 @@ buttons.forEach( (button, i) =>{
 
 
 let nextSlide = () =>{
-	sliderWindow.style.transform = `translate(${-800 * sliderNum}px)`;
+	sliderWindow.style.transform = `translate(${-framewidth * sliderNum}px)`;
 	sliderNum++;
 
 }
 let previousSlide = () =>{
-	sliderWindow.style.transform = `translate(-${800 * (sliderNum-2)}px)`;
+	sliderWindow.style.transform = `translate(-${framewidth * (sliderNum-2)}px)`;
 	sliderNum--;
 	
 }
@@ -69,7 +70,7 @@ const getFirstSlide = () => {
 	 total number of slides = 3
 */
 const getLastSlide = () => {
-	sliderWindow.style.transform = `translate(-${(imagesLength-1) * 800}px)`;
+	sliderWindow.style.transform = `translate(-${(imagesLength-1) * framewidth}px)`;
 	sliderNum = imagesLength;
 }
 
