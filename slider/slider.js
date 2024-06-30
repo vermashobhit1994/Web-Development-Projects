@@ -5,6 +5,10 @@ const sliderWindow = document.querySelector(".slider");
 let sliderNum = 1;
 let imagesLength = document.querySelectorAll(".image").length;
 
+let currentImageColor = document.querySelector("document.body")
+
+let colorsList = ["#9333FF", "#00ff6c",  "#1d2c73", "#fff7d1" ] ;
+
 let nextSlide = () =>{
 	sliderWindow.style.transform = `translate(${-800 * sliderNum}px)`;
 	sliderNum++;
@@ -35,8 +39,26 @@ const getLastSlide = () => {
 rightArrow.addEventListener("click", ()=>{
 	console.log("right clicked");
 	
+	
+	//change color of background
+  
+	
 	//show next slide until reach last slide and then show first slide
-	sliderNum < imagesLength ? nextSlide() : getFirstSlide();
+	if( sliderNum < imagesLength) {
+		document.body.style.backgroundColor = colorsList[sliderNum  ];
+		nextSlide() ;
+    
+
+	}else {
+		document.body.style.backgroundColor = colorsList[imagesLength - sliderNum];
+		getFirstSlide();
+		
+	}
+
+
+	
+	
+  
 })
 
 
@@ -44,6 +66,12 @@ rightArrow.addEventListener("click", ()=>{
 leftArrow.addEventListener("click", () => {
 	console.log("left click");
   //show previous slide until reach first slide and then show last slide
-  sliderNum  > 1 ? previousSlide() : getLastSlide();
+  if (sliderNum  > 1){
+		document.body.style.backgroundColor = colorsList[sliderNum -2];
+		previousSlide();
+	} else{
+		getLastSlide();
+		document.body.style.backgroundColor = colorsList[imagesLength-1];
+	} 
 })
 
