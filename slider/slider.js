@@ -1,3 +1,7 @@
+
+
+/*************************************** start of code for top slider  ***********************************************************************/
+
 const leftArrow = document.querySelector(".left");
 const rightArrow = document.querySelector(".right");
 const sliderWindow = document.querySelector(".slider");
@@ -7,7 +11,40 @@ let imagesLength = document.querySelectorAll(".image").length;
 
 let currentImageColor = document.querySelector("document.body")
 
-let colorsList = ["#9333FF", "#00ff6c",  "#1d2c73", "#fff7d1" ] ;
+let colorsList = ["#9333FF", "#00ff6c",  "#1d2c73", "#a5533f" ] ;
+
+
+const bottom = document.querySelector(".bottom");
+
+//create divs for buttons dynamically
+for (let i=0; i < imagesLength; i++){
+	const div = document.createElement("div");
+	div.className = "button" ;
+	bottom.appendChild(div) ;
+}
+
+//create event listner for each of buttons
+const buttons = document.querySelectorAll(".button") ;
+buttons[0].style.backgroundColor = "#FFFFFF";
+
+//reset background color when clicked next button
+const resetBackgroundColor = () =>{
+	buttons.forEach((button) =>{
+    button.style.backgroundColor = "transparent" ;
+	});
+}
+
+
+buttons.forEach( (button, i) =>{
+	button.addEventListener("click", ()=>{
+		resetBackgroundColor();
+		sliderWindow.style.transform = `translate(-${i * 800}px)` ;
+		sliderNum = i+1;
+    button.style.backgroundColor = "#FFFFFF";
+
+	})
+})
+
 
 let nextSlide = () =>{
 	sliderWindow.style.transform = `translate(${-800 * sliderNum}px)`;
@@ -36,12 +73,15 @@ const getLastSlide = () => {
 	sliderNum = imagesLength;
 }
 
+
+const changeButtonColor = () => {
+	resetBackgroundColor();
+	buttons[sliderNum-1].style.backgroundColor= "#FFFFFF";
+}
+
+
 rightArrow.addEventListener("click", ()=>{
 	console.log("right clicked");
-	
-	
-	//change color of background
-  
 	
 	//show next slide until reach last slide and then show first slide
 	if( sliderNum < imagesLength) {
@@ -55,10 +95,7 @@ rightArrow.addEventListener("click", ()=>{
 		
 	}
 
-
-	
-	
-  
+  changeButtonColor();
 })
 
 
@@ -73,5 +110,9 @@ leftArrow.addEventListener("click", () => {
 		getLastSlide();
 		document.body.style.backgroundColor = colorsList[imagesLength-1];
 	} 
+
+	changeButtonColor();
 })
+/*************************************** end of code for top slider  ***********************************************************************/
+
 
