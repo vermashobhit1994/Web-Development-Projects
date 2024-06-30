@@ -29,4 +29,8 @@ body{
 	object-fit: cover;
 }
 
+.slider{
+	display: flex;
+}
+
 
