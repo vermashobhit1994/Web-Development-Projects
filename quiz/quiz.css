@@ -1,3 +1,9 @@
 body{
 	background-color: #1d2c73;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Open Sans", sans-serif;
+	height: 100vh;
+  
 }
