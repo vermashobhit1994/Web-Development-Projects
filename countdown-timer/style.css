@@ -1,3 +1,35 @@
+/* block color : D395BD */
 body{
-	background-color: blueviolet;
+	background-color:#E8A6D1;
+
 }
+
+.container{
+	display:flex;
+  gap:10px;
+	align-items: center;
+	justify-content: center;
+  height: 95vh;
+}
+
+.hours{
+	background-color: blue;
+	font-size: 12rem;	
+}
+
+
+.minutes{
+	background-color: aquamarine;
+	font-size: 12rem;
+	
+	
+}
+
+.seconds{
+  background-color: blueviolet;
+	font-size: 12rem;
+	
+}
+
+
+

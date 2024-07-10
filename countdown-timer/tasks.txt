@@ -1,0 +1,2 @@
+1. change screen size - would change digits size and also outer block size.
+
