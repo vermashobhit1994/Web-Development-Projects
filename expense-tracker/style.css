@@ -1,0 +1,116 @@
+body{
+	background-color: #FEF6FF;
+  box-sizing: border-box;
+	height: 50vh;	
+}
+
+h1{
+	color: #1E1926;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+summary{
+	color: #2505E6;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+
+.income-section{
+	color: #1E1926;
+	font-weight: bold;
+
+	margin-left: 25%;
+	
+	border: 2px solid #2505E6;
+	background-color: #AFA8BA;
+	display: flex;
+}
+
+
+.income-section label:nth-child(1){
+  color:green;  
+	display: inherit;
+	margin-right: 10%;
+	font-size: 2rem;
+}
+
+
+.income-section label:nth-child(2){
+	color: red;
+	display: inherit;
+	font-size: 2rem;
+}
+
+.income-section input{
+	font-size: 2rem;
+}
+
+.directions-of-use{
+	text-align: left;
+	font-size: 2rem;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+
+.input-section label{
+	font-size: 2rem;
+	margin-right: 2%;
+}
+
+.input-section input{
+	font-size: 2rem;	
+  margin-right: 2%;
+}
+
+.subcategory-type{
+  display: flex;
+	flex-direction: column;
+	margin-top: 2%;
+}
+
+
+
+.addBtn{
+	font-size: 2rem;
+	background-color: #C30000;
+	color: #AFA8BA;
+	border-radius: 5%;
+	margin-left: 40%;
+	width: 20%;
+	height: 20%;
+
+	margin-bottom: 5%;
+}
+
+.expense-list{
+	 background-color: #9A89B4;
+	 border: 1px solid #1E1926;
+}
+.expense-list h2{
+	font-size: 3rem;
+}
+
+.expense-list th{
+	font-size: 2rem;
+ padding: 1rem;
+}
+
+.expense-list tfoot{
+	font-size: 2rem;
+	display: inline;
+}
+
+.reportBtn{
+	font-size: 2rem;
+	background-color: #C30000;
+	color: #AFA8BA;
+	border-radius: 5%;
+	margin-left: 40%;
+	width: 20%;
+
+
+}

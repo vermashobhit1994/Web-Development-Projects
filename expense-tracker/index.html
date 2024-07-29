@@ -15,15 +15,28 @@
 		</header>
 
 		<section class="income-section">
-      <h2>Income:</h2>
-		  <h2>Money Left:</h2>
+      <label> Income:
+				<input 
+					  type="text" 
+						placeholder="enter income" 
+						name="category-type" 
+						required minlength="1" maxlength="50">
+			</label>
+
+			<label> Money Spent:
+				<input 
+					  type="text" 
+						placeholder="enter money spent" 
+						name="category-type" 
+						required minlength="1" maxlength="50">
+			</label>   
 		</section>
     
 		<section class="directions-of-use">
 			<p>
 				<strong>How to use:</strong>
 				Fill category for where you've decided to spent money
-				and then choose subcategory and .
+				and then choose subcategory.
 				For example: 
 				<em>Snacks</em> as 
 				<i>category</i> and 
@@ -34,7 +47,7 @@
 
     <section class="input-section">
 
-        <label>Category:
+        <label class="category">Category:
           <input 
 					  type="text" 
 						placeholder="enter category" 
@@ -43,7 +56,7 @@
 				</label>
         
 
-				<label> Amount:
+				<label class="amount"> Amount (in Rupees):
           <input 
 					  type="number" 
 						placeholder="enter money spent"
@@ -52,7 +65,7 @@
 				</label>
 
         
-        <label>Date:
+        <label class="date">Date:
 					<input 
 					  type="datetime" 
 						placeholder="enter date of money spent"
@@ -98,29 +111,31 @@
 				<button class="addBtn" type="button">Add</button>
 		</section>
 
-    <section class="expenses-list">
-        <h2>Expenses report</h2>
-        <table>
+		
 
-            <thead>   
-              <tr>
-								<th>Category</th>
-								<th>Subcategory 1</th>
-								<th>Subcategory 2</th>
-								<th>Subcategory 3</th>
-								<th>Subcategory 4</th>
-								<th>Amount spent</th>
-								<th>Date</th>
-								<th>Delete</th>
-              </tr>     
-            </thead>
+    <section class="expense-list">
+			<h2>Expenses report</h2>
+			
+			<table>
+					<thead>   
+						<tr>
+							<th>Category</th>
+							<th>Subcategory 1</th>
+							<th>Subcategory 2</th>
+							<th>Subcategory 3</th>
+							<th>Subcategory 4</th>
+							<th>Amount spent</th>
+							<th>Date</th>
+							<th>Delete</th>
+						</tr>     
+					</thead>
 
 
-            <tfoot>
-                <td>Total amount spent:</td> 
-            </tfoot>
-        </table>
-			</section>
+					<tfoot>
+							<td>Total amount spent:</td> 
+					</tfoot>
+			</table>
+		</section>
 
 		<button class="reportBtn" type="button">Generate Report</button>
     <script src="script.js"></script>
