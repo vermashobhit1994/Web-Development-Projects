@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Money Tracker WebA pp</title>
+</head>
+<body>
+	  <header>
+			<h1> Money Tracker Web App</h1>
+			<summary>
+			  To <em>track</em> expenses done with detailed <em>report</em>.	
+			</summary>
+		</header>
+
+		<section class="income-section">
+      <h2>Income:</h2>
+		  <h2>Money Left:</h2>
+		</section>
+    
+		<section class="directions-of-use">
+			<p>
+				<strong>How to use:</strong>
+				Fill category for where you've decided to spent money
+				and then choose subcategory and .
+				For example: 
+				<em>Snacks</em> as 
+				<i>category</i> and 
+				<em>samosa</em> as 
+				<i>Subcategory</i>.
+			</p>
+		</section>
+
+    <section class="input-section">
+
+        <label>Category:
+          <input 
+					  type="text" 
+						placeholder="enter category" 
+						name="category-type" 
+						required minlength="1" maxlength="50">
+				</label>
+        
+
+				<label> Amount:
+          <input 
+					  type="number" 
+						placeholder="enter money spent"
+					  name="amount-type" 
+						required minlength="1" maxlength="50">
+				</label>
+
+        
+        <label>Date:
+					<input 
+					  type="datetime" 
+						placeholder="enter date of money spent"
+						name="date-type" >
+				</label>
+
+        
+				<div class="subcategory-type">
+          <label>Subcategory 1:
+						<input 
+							type="text" 
+							placeholder="enter subcategory 1"
+							name="subcategory-1-type" 
+							required minlength="0" maxlength="50">
+					</label>
+					
+					<label>Subcategory 2:
+						<input 
+							type="text" 
+							placeholder="enter subcategory 2"
+							name="subcategory-2-type" 
+							required minlength="0" maxlength="50">
+					</label>
+	
+					<label>Subcategory 3:
+						<input 
+							type="text" 
+							placeholder="enter subcategory 3"
+							name="subcategory-3-type" 
+							required minlength="0" maxlength="50">
+					</label>
+	
+					<label>Subcategory 4:
+						<input 
+							type="text" 
+							placeholder="enter subcategory 4"
+							name="subcategory-4-type" 
+							required minlength="0" maxlength="50">
+					</label>
+
+					
+				</div>
+				<button class="addBtn" type="button">Add</button>
+		</section>
+
+    <section class="expenses-list">
+        <h2>Expenses report</h2>
+        <table>
+
+            <thead>   
+              <tr>
+								<th>Category</th>
+								<th>Subcategory 1</th>
+								<th>Subcategory 2</th>
+								<th>Subcategory 3</th>
+								<th>Subcategory 4</th>
+								<th>Amount spent</th>
+								<th>Date</th>
+								<th>Delete</th>
+              </tr>     
+            </thead>
+
+
+            <tfoot>
+                <td>Total amount spent:</td> 
+            </tfoot>
+        </table>
+			</section>
+
+		<button class="reportBtn" type="button">Generate Report</button>
+    <script src="script.js"></script>
+</body>
+</html>
