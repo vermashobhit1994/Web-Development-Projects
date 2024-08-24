@@ -1,0 +1,133 @@
+:root{
+	
+	/* background-color: rgb(243,229,216); */
+	--clr-white-100: hsl(0, 0%, 100%);
+	
+
+
+	--clr-stone-100: hsl(30, 54%, 90%);
+	--clr-stone-150: hsl(30, 18%, 87%);
+	--clr-stone-600: hsl(30, 10%, 34%);
+	--clr-stone-900: hsl(24, 5%, 18%);
+	
+	--clr-brown-800: hsl(14, 45%, 36%);
+
+	--clr-rose-800:hsl(332, 51%, 32%) ;
+  --clr-rose-50: hsl(330, 100%, 98%);
+	
+	--font-weight-400: 400;
+	--font-weight-600: 600;
+	--font-weight-700: 700;
+
+	--font-family-heading: "Young Serif", serif ;
+	--font-family-content: "Outfit", sans-serif ;
+	
+	 
+
+	--clr-card-background: var(--clr-white-100);
+  --clr-body-background: var(--clr-stone-100);
+}
+
+body{
+	background-color: var(--clr-body-background);
+	font-family: var(--font-family-content);
+	font-size: 1rem;
+	color: var(--clr-stone-600);
+	
+
+	display: grid;
+	place-items: center;	 
+}
+
+
+.omelette-receipe{
+	background-color: var(--clr-card-background);
+
+	max-width: 600px;
+  
+}
+
+@media (min-width: 600px){
+
+	.omelette-receipe{
+		border-radius: 1rem;
+		margin-top: 25%;
+	}
+	
+
+	.omelette-receipe picture img{
+		padding: 2rem;
+		border-radius: 2rem;
+	}
+}
+
+.omelette-receipe section {
+	padding: 1rem;
+}
+
+.omelette-receipe section p ,
+.omelette-receipe section h1,
+.omelette-receipe section h2,
+.omelette-receipe section h3 {
+	margin: 1rem;
+}
+
+
+
+.utility--heading-style{
+	font-family: var(--font-family-heading);
+	font-size: 1.5rem;	
+}
+
+.utility--section-color,
+.utility--list-color li::marker{
+  color: var(--clr-brown-800);
+	font-weight: var(--font-weight-600);
+	
+}
+
+.omelette-receipe__title{
+	color: var(--clr-stone-900);
+	font-weight: var(--font-weight-700);
+	font-size: 2.5rem;
+}
+
+.omelette-receipe__nutrition table td{
+  font-weight: var(--font-weight-700);
+}
+
+.omelette-receipe__nutrition table th{
+  color: var(--clr-stone-600);
+	font-weight: var(--font-weight-400);
+}
+
+
+
+.preparation-time-heading,
+.preparation-time-list li::marker{
+	color: var(--clr-rose-800);
+}
+
+.preparation-time-list{
+	background-color: var(--clr-rose-50);
+	border-radius: 0.5rem;
+} 
+
+table {
+  border-collapse: collapse;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table tr {
+  border-bottom: 0.01rem solid var(--clr-stone-600);
+  text-align: center;	
+}
+
+table tr:last-child {
+  border: 0;
+}
+
+
+
