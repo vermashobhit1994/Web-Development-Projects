@@ -1,0 +1,139 @@
+/* default styling */
+*,
+*::after,
+*::before {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+	max-width: 100%;
+}
+
+/* custom CSS properties */
+:root {
+  --clr-primary-600: hsl(4, 100%, 67%);
+  --clr-neutral-800: hsl(234, 29%, 20%);
+	--clr-neutral-700: hsl(235, 18%, 26%);
+	--clr-neutral-300: hsl(231, 7%, 60%);
+	--clr-neutral-100: hsl(0, 0%, 100%);
+
+	--font-size-400: 1rem;
+
+	--font-weight-400: 400;
+	--font-weight-700: 700;
+
+	--font-family-content: "Roboto", sans-serif;
+
+	--screen-width-min: 500px;
+}
+
+body{
+  font-family: var(--font-family-content);
+  
+  display: flex;
+	flex-direction: column;
+  justify-items: center;
+	align-items: center;
+	flex-wrap: wrap;
+	
+}
+
+.newsletter-cta{
+	/* max-width: var(--screen-width-min); */
+	border: 1px solid red;
+}
+
+@media (min-width: 500px){
+  .newsletter-cta{
+    display: flex;
+		flex-direction: row-reverse;
+		border: 1px solid red;
+		justify-content: center;
+		background-color: var(--clr-neutral-100);
+		border-radius: 1rem;
+  }
+
+	.newsletter-cta img{
+    background-image: url("./assets/images/illustration-sign-up-desktop.svg");
+		border-radius: 1rem;
+		min-height: 100%;
+		object-fit: cover;
+	}
+
+  
+
+   body{
+		background-color: var(--clr-neutral-700) ;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+	 }
+
+	 .newsletter-cta picture{
+		padding: 1rem;
+	 }
+}
+
+picture img{
+	min-width: 100%;
+}
+
+[space="large"]{
+	margin: 1.5rem;
+}
+
+.checkmark-list{
+	list-style: none;;
+	
+}
+
+.checkmark-list li{
+	display: flex;
+	gap: 1rem;
+	align-items: first baseline;
+	padding-bottom: 1rem;
+}
+
+.checkmark-list li img{
+	max-width: 1rem;
+  border-radius: 50%;
+}
+
+
+form{
+	margin-top: -1rem;
+  margin-right: 1rem;
+  
+}
+
+.submit-btn{
+  background-color: var(--clr-neutral-800);
+	font-weight: var(--font-weight-700);
+	
+	color: var(--clr-neutral-100);
+	border-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+	width: 100%;
+}
+
+
+form input{
+	padding: 1rem;
+	margin-top: 1rem;
+	border: 1px solid var(--clr-neutral-300);
+	border-radius: 0.5rem;
+  width: 100%;
+	margin-bottom: 1rem;
+}
+
+form label{  
+	color: var(--clr-neutral-800);
+	font-weight: var(--font-weight-700);
+}
+
+
