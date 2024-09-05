@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+}
+
+
+main{
+	display: flex;
+ 	
+	justify-content: center;
+  align-items: center;
+	height: 100vh;
+	background-color: #FFD7C4;
+  
+	
+}
+
+
+.to-do-list{
+	background-color: #FF9874;
+	
+  color: black;
+  border: 5px solid #9DBDFF;
+	
+	padding: 2rem;
+}
+
+table {
+	margin-top: 1rem;
+	border:2px solid;
+	width: 50vw;
+}
+
+.task-input{
+	padding: 1rem;;
+	font-size: 1.5rem;
+	border: 2px solid  #7695FF;
+}
+
+.task-label{
+  font-size: 2rem;
+}
+
+
+
