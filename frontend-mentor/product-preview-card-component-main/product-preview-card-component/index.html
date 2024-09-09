@@ -1,0 +1,199 @@
+<!-- BEM entity - It includes block, element and modifier  
+     features of BEM entity
+		 1. behavior
+		 2. appearance
+		 3. tests
+		 4. templates
+		 5. documentation
+		 6. description of dependencies
+		 7. additional data (eg images)
+
+		 rules for naming BEM entity - must be able to separate blocks from elements and modifiers.
+		 1. standard BEM style - block-name__elem-name_mod-name_mod-val
+		 2. two dashes style - block-name__elem-name--mod-name--mod-val
+		 3. came case style -  blockName-elemName_modName_modVal
+		 4. react style - BlockName-ElemName_modName_modVal
+		 5. no namespace style - _available 
+-->
+
+<!-- As per BEM(block element modifier) 
+	  1. block that is functionally and logically independent component that allow for reuse.
+		2. block don't change margin and position and contains no CSS tag and ID selector 
+		3. block encapsulate
+		   3.1 behavior 
+			 3.2 templates
+			 3.3 styles
+		4. blocks can be nested inside any other blocks.
+		5. blocks can change position on page or between pages or projects without modify CSS and javascript.
+		6. an interface on webpage can contains multiple instances of same block.
+		7. When to use block?
+			  block is used when section of code might be reused and it doesn't depend on other page
+				components.
+		8. technologies used to implement block (as per features of BEM entity)
+		   8.1 behavior - javascript, CoffeeScript
+			 8.2 appearance - CSS, Stylus, Sass
+			 8.3 templates - BEMHTML, BH, Pug, Handlebars, XSL
+			 8.4 documentation - Markdown, Wiki, XML
+		 9. block implementation (using above technologies ) can be redefined by adding new features
+		    on different level.  
+-->
+
+<!-- As per BEM(block element modifier) 
+	  1. element that is composite (include many parts) and always associated with block.
+		2. element can't be used outside of block.
+
+			nesting of elements is allowed but element must always part of block and not of element.
+			NOTE: when nesting of elements, block name tells namespace that gurantee elements dependent 
+						on block .
+			
+						NOTE: element shouldn't be used separatedly from block.
+			NOTE: element is optional component and any block can avoid it.
+
+			When to use element?
+			If block of code can't be used separately without parent (block)
+			when element is divided into subelements then create service block instead of 
+			associate element to each other.
+-->
+
+<!-- Modifier : As per BEM
+	    1. modifier is an entity that tells appearance, state and behavior of block or element.
+			   modifer name - appearance or state or appearance
+				              - eg theme_islands, disabled, directions_top
+			2. modifier name is separated from block by '_'
+			3. use of modifier is optional.
+			4. similar to HTML attributes.
+			5. modifier can change in runtime or via other blocks.
+			6. types of modifier
+			   6.1 boolean - when presence or absence of modifier is important but not it's value.
+				     how to write: block-name_modifier-name
+						               block-name__element-name_modifier-name
+				 6.2 key-value - used when modifier value is important
+				     how to write: block-name_modifier-name_modifier-value
+						               block-name__element-name_modifier-name_modifier-value
+							NOTE: can't use identical modifier with different values simultaneously.
+							      eg  <form class="search-form
+                          search-form_theme_islands
+                           search-form_theme_lite">
+			7. modifier can't be used along on HTML element but must be used to change appearance,
+			   behavior, state of BEM (block element modifier) entity
+
+				 incorrect use
+			   form class="search-form_theme_islands">
+				 
+				 correct use
+				 	<form class="search-form search-form_theme_islands">
+				     		
+-->
+
+<!-- file structure - as per BEM
+	   1. block 
+		    1.1 single directory must include only single block.
+		    1.2 directory and block must have same name.
+		    1.3 block implementation must be divided into separate files.
+		    1.4 block directory must be root directory that contains subdirectories
+		        for elements and modifiers.
+		 2. elements 
+		    2.1 names for element directories must begin with '__'
+		    2.2 implementation of element must be divided into separate files.
+		 3. modifier 
+		    3.1 names for modifier directories must begin with '_'
+		    3.2 implementation of modifier must be divided into separate files.
+
+		 4. types of file structure implementation
+		    4.1 flat 
+				    4.1.1 directories aren't used for blocks
+						4.1.2 optional elements and modifiers in separate files or main block file. 
+				4.2 flex
+				    4.2.1 separate directory for each block.
+						4.2.2 elements and modifiers can be implemented in separate files or inside block files.
+ -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./reset.css">
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+
+      <!-- "product" is block 
+			-->
+			<article class="product">
+
+        <picture class="product__img">
+					<source srcset="images/image-product-desktop.jpg" media="(min-width: 600px)"/> 
+					<img
+            src="./images/image-product-mobile.jpg"
+            alt="Gabrielle channel Essence de perfume bottle lying on table with leaves above and below it"
+          />
+        </picture>
+
+				<!-- "product__content", "product__category", "product__title" is an element  -->
+        <div class="product__content">
+          <p class="product__category">Perfume</p> 
+					<h1 class="product__title product_utility">Gabrielle Essence Eau De Parfum</h1>
+
+					<p> 
+					  A floral, solar and voluptuous
+            interpretation composed by Olivier Polge, Perfumer-Creator for the
+            House of CHANEL.
+				  </p>
+
+					<!-- "flex-group" is block i.e. treated as separate component and not part product card  -->
+					<section class="flex-group">
+            <p class="product__price product_utility">
+							<span class="visually-hidden">current price</span>
+							$149.99
+						</p>
+						<p class="product__original-price">
+							<span class="visually-hidden">original price</span>
+							<s>$169.99</s>
+						</p>
+					</section>
+					
+					<!-- button is treated as standalone(own) component and not as part of product card  -->
+					<!-- this button isn't unique to product card  -->
+					<button class="button" data-icon="shopping-cart"> Add to Cart</button>
+        </div>
+      </article>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Shobhit Verma</a>.
+    </div>
+  </body>
+</html>

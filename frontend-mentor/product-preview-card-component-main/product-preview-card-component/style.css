@@ -1,0 +1,155 @@
+/* @import "reset.css"; */
+
+/* setting custom properties on root element
+   so that it can be inherited to other selector
+*/
+:root{
+	--clr-primary-400: hsl(158, 36%, 37%);
+	--clr-primary-500: hsl(158,36%, 15%);
+	--clr-secondary-200: hsl(30, 38%, 92%);
+ 
+	--clr-neutral-900: hsl(212, 21%, 14%);
+	--clr-neutral-400: hsl(228, 12%, 48%);
+	--clr-neutral-100: hsl(0, 0%, 100%);
+
+	/* font size is specified in selector itself */
+	--font-weight-regular: 500;
+	--font-weight-bold: 700 ;
+
+
+	--font-family-accent: "Fraunces", serif;
+	--font-family-body: "Montserrat", sans-serif;
+
+}
+
+/* general styling */
+body{
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+	font-family: var(--font-family-body);
+	font-weight: var(--font-weight-regular);
+
+	color: var(--clr-neutral-400);
+	font-size: 0.875rem; /* 14px = 0.875rem */
+	background-color: var(--clr-secondary-200);
+
+	min-height: 100vh;
+
+}
+
+
+
+
+
+.product{
+	--content-padding: 1.5rem;
+	--content-spacing: 1rem;
+  background-color: var(--clr-neutral-100);
+	border-radius: 1rem;
+	overflow: hidden	;
+	
+	
+  display: grid;
+
+  /* max-width: 600px; */
+}
+
+
+.product__img img{
+	min-width: 100%;	
+	
+}
+
+
+@media (min-width: 600px){
+	.product{
+		grid-template-columns: 1fr 1fr;
+	}
+	
+}
+
+.flex-group{
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+
+.product__content{
+	padding: var(--content-padding);
+	display: flex;
+	flex-direction: column;
+	gap: var(--content-spacing);
+}
+
+
+
+.product__category{
+	text-transform: uppercase;
+	
+	letter-spacing: 0.313rem;
+}
+
+
+/* utlities */
+.product_utility{
+	font-family: var(--font-family-accent);
+	color: var(--clr-primary-600);
+}
+
+.product__title{
+	font-size: 2rem;
+	font-weight: var(--font-weight-bold);
+	color: var(--clr-neutral-900);
+}
+
+
+.product__price{
+	font-size: 2rem;
+	color: var(--clr-primary-400);
+	font-weight: var(--font-weight-bold);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+
+
+.button{
+  cursor: pointer;
+	padding: 1rem 1.5rem;
+	border: 0;
+	background-color: var(--clr-primary-400);
+	text-decoration: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap:0.5rem;
+	border-radius: 0.5rem;
+	color: var(--clr-neutral-100);
+	font-weight: var(--font-weight-bold);
+}
+
+.button:is(:hover, :focus){
+  background-color: var(--clr-primary-500);
+}
+
+button[data-icon="shopping-cart"]::before{
+	content: "";
+	background-image: url("./images/icon-cart.svg");
+	width: 15px;
+	height:16px;
+}
+
+
