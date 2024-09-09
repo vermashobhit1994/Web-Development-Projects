@@ -1,0 +1,17 @@
+/* custom CSS properties */
+:root {
+  --clr-primary-600: hsl(4, 100%, 67%);
+  --clr-neutral-800: hsl(234, 29%, 20%);
+	--clr-neutral-700: hsl(235, 18%, 26%);
+	--clr-neutral-300: hsl(231, 7%, 60%);
+	--clr-neutral-100: hsl(0, 0%, 100%);
+
+	--font-size-400: 1rem;
+
+	--font-weight-400: 400;
+	--font-weight-700: 700;
+
+	--font-family-content: "Roboto", sans-serif;
+
+	--screen-width-min: 500px;
+}
