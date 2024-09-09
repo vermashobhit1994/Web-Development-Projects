@@ -1,0 +1,60 @@
+/*
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+/* prevent overflow */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* remove default margin */
+* {
+  margin: 0;
+}
+
+/* modify line height for dsylexic persons as per WCAG criteria */
+/* make text easier to read by increase brightness of font using subpixel antialiasing */ 
+body {
+  line-height: 2;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* make all media elements to block with width as per parent size */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* inherit forms to change default behavior of fonts */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* word wrapping when screen size is small than word length to prevent overflow from screen size */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3{
+	line-height: 1;
+}
