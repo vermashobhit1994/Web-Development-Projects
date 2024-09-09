@@ -1,0 +1,47 @@
+
+
+/* all styles variables */
+@import url("./common/variables.css");
+
+
+/* apply default styles to all elements */
+@import url("./common/reset.css");
+
+/* styles from html body*/
+@import url("./common/content.css");
+
+
+
+
+
+/* styles from headings */
+@import url("./goal-completion/goal-completion.css");
+@import url("./goal-completion/goal-completion__title.css");
+
+
+/* styles from app-container card */
+@import url("./app-container/app-container.css");
+@import url("./app-container/app-container__subtitle.css");
+@import url("./app-container/app-container__logo-image.css");
+@import url("./app-container/app-container__progress-label.css");
+@import url("./app-container/app-container__progress-bar.css");
+
+
+/* styles from error label */
+@import url("./app-container/app-container__error-label.css");
+
+/* styles for goal container */
+@import url("./app-container/app-container__goal-container.css");
+@import url("./app-container/app-container__quotation.css");
+@import url("./app-container/app-container__made-with.css");
+@import url("./app-container/__custom-radio-button/app-container__custom-radio-button.css");
+@import url("./app-container/app-container__goal-input.css");
+
+
+/* styles for conditionally display tick mark and strike text and change text color */
+@import url("./app-container/app-container_completed.css");
+
+
+/* media queries styles */
+@import url("./common/media-queries/media-queries.css");
+

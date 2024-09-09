@@ -1,0 +1,38 @@
+.app-container__goal-input{
+  
+	/* all: unset; */
+  font-size: var(--goal-input-font-size);
+	font-weight: var( --goal-input-font-weight) ;
+  font-family: var(--goal-input-font-family) ;
+
+	border: var(--goal-input-border);
+	outline: var(--goal-input-outline);
+	height: var( --goal-input-height);
+	width: 100%;
+
+
+
+
+  
+	padding-left: var(--goal-container-padding-left);
+  
+	height: var(--goal-input-height) ;
+ 
+
+	background-color: var(--goal-input-background-clr);
+	
+	/* background-color: aqua; */
+
+	
+}
+
+.app-container__goal-input::placeholder{
+	color: var(--goal-container-text-clr);
+}
+
+
+
+
+
+
+

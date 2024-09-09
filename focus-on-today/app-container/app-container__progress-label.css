@@ -1,0 +1,7 @@
+
+.app-container__progress-label{
+	font-size: var(--progress-label-font-size);
+	font-weight: var(--progress-label-font-weight);
+  color:  var(--progress-label-clr);
+	margin-top: var(--progress-label-top-margin) ;
+}

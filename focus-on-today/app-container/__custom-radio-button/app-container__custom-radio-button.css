@@ -1,0 +1,19 @@
+.app-container__custom-radio-button{
+	height: var(--goal-container-radio-button-height);
+	width: var(--goal-container-radio-button-width);
+	border-radius: 50%;
+
+	border: var(--goal-container-radio-button-border);
+
+	margin-left: var(--goal-container-radio-button-margin);
+
+	flex-shrink: 0;
+
+	cursor: var(--goal-container-radio-button-cursor);
+
+  display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+

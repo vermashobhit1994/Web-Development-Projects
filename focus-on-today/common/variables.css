@@ -1,0 +1,140 @@
+:root{
+
+	--clr-background: hsla(94, 100%, 32%, 0.07);
+  --font-family-content: "Poppins", system-ui, sans-serif;
+	
+  --margin-default-content: 0;
+
+	--content-font-weight: 400;
+
+
+	
+
+	
+
+	/* goal-completion block variables *******************************/
+	--margin-content-left-right: 1rem;
+  --margin-content-top-bottom: 0rem;
+
+	/******************************************************************/
+
+	/* goal-completion heading variables **************************/
+	--clr-heading: 	hsl(93, 100%, 32%);
+	--clr-heading-text: rgba(97, 72, 28, 1); 
+	--font-size-heading: 4rem; /* 4rem = 4 x 16px = 64px */	
+	--font-weight-heading: 700;
+	--alignment-heading: center;
+	/**************************************************************/
+
+
+
+
+	/* app-container variables *******************************/
+	--clr-app-container: rgba(251, 251, 251, 1);
+	--app-container-max-width: 41.25rem; 
+	--app-container-margin-inline: auto;
+  --app-container-border-radius: 0.938rem; 	
+  --app-container-left-right-padding: 2.625rem;
+	--app-container-padding-top: 1.813rem;
+	--app-container-padding-bottom:2rem;
+	--app-container-width-items: 0.938rem;
+	--app-container-box-shadow: 0 0 10px 5px black;
+	/********************************************************/
+
+
+  /* app-container subtitle variables *******************************/
+	--app-container-subtitle-font-size: 2rem;
+	/********************************************************/
+
+
+	/* app-container logo image variables *******************************/
+	--app-container-logo-inline-margin: auto;
+	--app-container-logo-left-margin: 0.3125rem;
+	--app-container-logo-vertical-align: middle;
+  /********************************************************/
+
+
+	/* app-container progress label variables ****************************/
+	--progress-label-font-size: 0.875rem;
+	--progress-label-font-weight: 400;
+	--progress-label-clr: hsla(0, 0%, 52%, 1);
+	--progress-label-top-margin: 2rem;
+	/*******************************************************************/
+
+  /* app-container progress label variables ****************************/
+	--progress-bar-incomplete-clr: hsla(94, 100%, 32%, 0.1) ;
+  --progress-bar-complete-clr: var(--clr-heading) ;
+  --progress-bar-border-radius: 0.938rem;
+	--progress-bar-margin-top: 1.125rem;
+	--progress-bar-height: 1.875rem;
+	--progress-bar-margin-bottom: 3.75rem;
+  --progress-bar-margin-bottom: 3.75rem;
+
+	--progress-value-font-size: 0.625rem;
+	--progress-value-font-weight: 500;
+	--progress-value-line-height: 0.938rem;
+	--progress-value-text-clr: hsla(94, 100%, 94%, 1);
+	--progress-value-left-right-margin: 1.25rem;
+
+
+	--error-label-font-size: 0.875rem;
+	--error-label-text-clr: hsla(0, 100%, 66%, 1);
+	--error-label-margin-top: 1.125rem;
+	--error-label-margin-bottom: 1.25rem;
+
+
+
+	--goal-container-border: 1px solid hsla(38, 55%, 25%, 0.3);
+	--goal-container-border-radius: 1.063rem;
+  --goal-container-background-clr: hsla(0, 0%, 100%, 1); 
+
+  --goal-container-display: flex;
+	--goal-container-display-align-items: center;	
+
+	--goal-container-height: 5.125rem;
+
+	--goal-container-margin-bottom: 2.875rem;
+   
+
+	--goal-container-text-clr: hsla(0, 0%, 85%, 1);
+	--goal-container-padding-left: 1.375rem;
+
+
+
+	--goal-container-radio-button-height: 1.5rem;
+	--goal-container-radio-button-width: 1.5rem;
+	--goal-container-radio-button-margin: 1.375rem;
+  --goal-container-radio-button-border: 2px solid hsla(38, 55%, 25%, 0.3);
+  --goal-container-radio-button-cursor: pointer;
+  
+	
+	--tick-mark-background-clr:  hsla(94, 100%, 32%, 1);
+  --tick-mark-display-default: none;
+	--tick-mark-display-complete: block;
+
+
+	--tick-mark-complete-text-clr: hsla(94, 100%, 32%, 1);
+  --tick-mark-complete-text-decoration: line-through;
+
+	 --goal-input-font-size: 1rem;
+	 --goal-input-font-weight: 500;
+	 --goal-input-height: 1.5rem;
+   --goal-input-outline: none;
+	 --goal-input-border: none;
+	--goal-input-font-family: inherit;
+	--goal-input-height: 100% ;
+	--goal-input-background-clr: transparent;
+
+	--quotation-margin-top: 0.5rem;
+	/* --quotation-margin-bottom: 4.125rem; */
+	--quotation-font-weight: 500;
+	
+	--quotation-clr: hsla(0, 0%, 0%, 1);
+	--quotation-margin: auto;
+	--quotation-text-align: center;
+
+	--made-with-margin-top: 50px;
+	--made-with-font-size: 10px;
+	--made-with-font-weight: 500;
+	--made-with-text-clr: hsla(0, 0%, 52%, 1);
+}

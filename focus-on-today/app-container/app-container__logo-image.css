@@ -1,0 +1,42 @@
+.app-container__logo-image{
+  vertical-align: var(--app-container-logo-vertical-align);
+	margin-left: var(--app-container-logo-left-margin);
+
+
+	position: relative; 
+}
+
+.app-container__logo-container{
+	display: inline-block;
+	position: relative;
+}
+
+.app-container_logo-without-face{
+	position: absolute;
+	/* left: 166px;
+  top: 119px; */
+  /* margin-inline: auto; */
+
+	left: 1.20rem;
+	top: 1.40rem;
+	z-index: 1;
+}
+
+.app-container_logo_with-face{
+
+	animation-name: rotateLogo;
+	animation-delay: -2s;
+	animation-duration: 2s;
+  animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+
+}
+
+@keyframes rotateLogo {
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}

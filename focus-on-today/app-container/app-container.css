@@ -1,0 +1,14 @@
+
+.app-container{
+	background-color: var(--clr-app-container);
+	max-width: var(--app-container-max-width);
+	margin-inline: var(--app-container-margin-inline);
+	border-radius: var(--app-container-border-radius) ;
+	padding-inline: var(--app-container-left-right-padding) ;
+  padding-top: var(--app-container-padding-top);
+	padding-bottom: var(--app-container-padding-bottom);
+
+	box-shadow: var(--app-container-box-shadow);
+  
+
+}

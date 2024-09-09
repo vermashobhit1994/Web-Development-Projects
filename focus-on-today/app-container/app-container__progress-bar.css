@@ -1,0 +1,45 @@
+.app-container__progress-bar{
+
+	height: var(--progress-bar-height);
+	background-color: var(--progress-bar-incomplete-clr);
+	border-radius: var(--progress-bar-border-radius);
+	margin-top: var(--progress-bar-margin-top);
+
+  margin-bottom: var(--progress-bar-margin-bottom);  
+
+	margin-bottom: var(--progress-bar-margin-bottom);
+
+
+}
+
+.app-container__progress-value {
+	background-color: var(--progress-bar-complete-clr);
+	border-radius: inherit;
+	
+	height: inherit;
+	
+
+	display: flex;
+	align-items: center;
+	width: 0;
+
+	overflow: hidden;
+	
+	transition: width 0.5s ease-in-out;
+}
+
+.app-container__progress-value span{
+	font-size: var(--progress-value-font-size);
+	line-height: var(--progress-value-line-height);
+	font-weight: var(--progress-value-font-weight);
+	color: var(--progress-value-text-clr);
+  
+	margin-inline: var(--progress-value-left-right-margin) ;
+
+	min-width: max-content;
+	
+}
+
+
+
+

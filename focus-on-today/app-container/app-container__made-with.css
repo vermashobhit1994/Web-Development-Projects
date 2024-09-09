@@ -1,0 +1,10 @@
+.app-container__made-with {
+  text-align: center;
+
+	margin-top: var(--made-with-margin-top);
+
+	font-size: var(--made-with-font-size);
+	font-weight: var(--made-with-font-weight);
+ 
+	color: var(--made-with-text-clr);
+}

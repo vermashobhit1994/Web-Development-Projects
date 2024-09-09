@@ -1,0 +1,15 @@
+.app-container__quotation{
+	margin-top: var(--quotation-margin-top) ; 
+  
+	/* margin-bottom: var(--quotation-margin-bottom); */
+	
+	
+	text-align: var(--quotation-text-align); 
+	color: var(--quotation-clr);
+
+
+	
+	font-weight: var(--quotation-font-weight);
+
+	margin-inline: var(--quotation-margin);
+}

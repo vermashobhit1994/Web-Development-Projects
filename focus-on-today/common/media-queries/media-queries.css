@@ -1,0 +1,18 @@
+@media (max-width: 600px){
+	.goal-completion__title{
+		font-size: calc(var(--font-size-heading) / 2);
+	}
+
+	.app-container{
+		padding-inline: calc(var(--app-container-left-right-padding) / 2);
+    padding-block: calc(var(--app-container-top-bottom-padding) / 2);
+	}
+
+	.goal-container{
+		height: calc(var(--goal-container-height) /2 );
+		border-radius: calc(var(--goal-container-border-radius) /2 ) ;
+		margin-bottom: calc( var(--goal-container-margin-bottom) /2 ) ;
+	}
+
+	
+}

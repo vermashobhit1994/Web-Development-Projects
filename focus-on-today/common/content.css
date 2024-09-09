@@ -1,0 +1,12 @@
+
+
+
+body{
+	background-color: var(--clr-background);
+  font-family: var(--font-family-content);
+	margin: var(--margin-default-content);
+
+	font-weight: var(--content-font-weight);
+
+	
+}

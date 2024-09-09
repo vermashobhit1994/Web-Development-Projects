@@ -1,0 +1,18 @@
+.app-container__error-label{
+	color: var(--error-label-text-clr);
+	font-size: var(--error-label-font-size);
+ 
+
+
+	/* default display when no entering input */
+	display: none;
+	position: absolute;
+  margin-bottom: var(--error-label-margin-bottom);
+	margin-top: var(--error-label-margin-top);
+}
+
+
+/* show error label when only class is applied */
+.app-container_show-error .app-container__error-label{
+  display: block;
+}

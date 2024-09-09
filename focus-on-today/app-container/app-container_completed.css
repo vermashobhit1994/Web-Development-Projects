@@ -1,0 +1,28 @@
+.app-container_completed .app-container__custom-radio-button{
+  background-color: var(--tick-mark-background-clr);
+	border-color: var(--tick-mark-background-clr);
+  
+}
+
+.app-container_tick-icon{
+	display: var(--tick-mark-display-default);
+}
+
+.app-container_completed .app-container_tick-icon{
+  display: var(--tick-mark-display-complete);
+
+}
+
+
+/* if completed parent class present */
+.app-container_completed .app-container__goal-input{
+  color: var(--tick-mark-complete-text-clr) ;
+	text-decoration: var(--tick-mark-complete-text-decoration);
+
+}
+
+.app-container_completed {
+	
+}
+
+

@@ -1,0 +1,24 @@
+.app-container__goal-container{
+	height: var(--goal-container-height) ;
+	border: var(--goal-container-border);
+	border-radius: var(--goal-container-border-radius);
+
+	display: var(--goal-container-display);
+	align-items: var(--goal-container-display-align-items);
+
+  
+	
+
+  background-color: var(--goal-container-background-clr);
+
+
+	margin-bottom: var(--goal-container-margin-bottom);
+
+  
+	
+}
+
+
+
+
+
