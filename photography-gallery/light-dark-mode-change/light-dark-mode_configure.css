@@ -1,0 +1,48 @@
+
+.light-dark-mode-change{
+
+
+	/* button related properties */
+	--toggle-btn-height: 2rem;
+	--toggle-btn-width: 5rem;
+	--toggle-btn-display: inline-flex;
+
+	--toggle-btn-border-radius: 1rem;
+  --toggle-btn-icons-gap: 1.5rem;
+  --toggle-btn-icons-gap: 1.5rem;
+  --toggle-btn-padding: 0;
+  --toggle-btn-position: relative; 
+  --toggle-btn-cursor: pointer;
+  --toggle-btn-border-size: 1px;
+  /*********************************/
+
+	/* button icons related properties */
+	--toggle-btn-icon-height: 50%;
+	--toggle-btn-icon-width: 50%;
+  --toggle-btn-icon-alignment: center;
+  /*********************************/
+
+
+
+	/* button circle related properties */
+	--toggle-circle-width: 1.9rem; 
+	--toggle-circle-height: 1.9rem;
+  --toggle-circle-alignment: center;
+  --toggle-circle-position: absolute;
+
+  --toggle-circle-transition-timing-function: ease-in-out;
+  --toggle-circle-transition-duration: 0.5s;
+  --toggle-circle-transition-property: left;
+
+  --toggle-circle-border-radius : 50%;
+  --toggle-circle-border-size: 1px;
+  /*********************************************/
+
+
+	/* toggle circle position related properties */
+	--toggle-circle-initial-position: 0%;
+	--toggle-circle-final-position: 61.5%;
+
+
+	
+}

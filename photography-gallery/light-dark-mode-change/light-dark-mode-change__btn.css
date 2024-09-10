@@ -1,0 +1,133 @@
+
+@import "./light-dark-mode_configure.css";
+
+.light-dark-mode-change__btn{
+   
+
+
+	height: var(--toggle-btn-height);
+	width: var(--toggle-btn-width);
+  display: var(--toggle-btn-display);
+
+	
+
+  border-radius: var(--toggle-btn-border-radius);
+	gap: var(--toggle-btn-icons-gap);
+
+	padding: var(--toggle-btn-padding);
+
+	border: var(--toggle-btn-border-size)  var(--toggle-btn-border-clr, var(--default-toggle-btn-border-clr) );
+
+  position: var(--toggle-btn-position);
+
+
+	cursor: var(--toggle-btn-cursor) ;
+
+
+    
+
+}
+
+.light-dark-mode-change__btn img{
+
+  
+	height: var(--toggle-btn-icon-height);
+	width: var(--toggle-btn-icon-width);
+	/* position: relative; */
+  align-self: var(--toggle-btn-icon-alignment);
+	
+ 	
+  	
+}
+
+.light-dark-mode-change__btn .light-dark-mode-change__circle{
+	
+	
+	position: var(--toggle-circle-position);
+  
+	min-width: var(--toggle-circle-width);
+	min-height: var(--toggle-circle-height);
+	background-color: var(--dark-mode-clr);
+  
+	border-radius: var(--toggle-circle-border-radius);
+  align-self: var(--toggle-circle-alignment);
+
+
+	
+
+ transition-timing-function: var(--toggle-circle-transition-timing-function);
+ transition-duration: var(--toggle-circle-transition-duration);
+ transition-property: var(--toggle-circle-transition-property);
+
+ border:  var(--toggle-circle-border-size) solid var(--toggle-btn-border-clr, var(--default-toggle-btn-border-clr) );
+
+    
+}
+
+
+
+
+.light-dark-mode-change__btn:not(.light-dark-mode-change_toggle){
+	background-color: var(--dark-mode-clr, var(--default-dark-mode-clr) );
+	
+}
+
+
+.light-dark-mode-change_toggle, .light-dark-mode-change__btn {
+	background-color: var(--light-mode-clr, var(--default-light-mode-clr) );	
+
+}
+
+	
+
+
+.light-dark-mode-change__btn .light-dark-mode-change__circle{
+
+	left: var(--toggle-circle-initial-position);	
+  
+	
+
+	background-color: var(--light-mode-clr, var(--default-light-mode-clr) );
+	
+}
+
+
+.light-dark-mode-change_toggle .light-dark-mode-change__circle{
+
+
+
+  left:var(--toggle-circle-final-position);
+	background-color: var(--dark-mode-clr, var(--default-dark-mode-clr ) );	
+}
+
+
+
+
+
+
+
+
+
+.dark-mode{
+	background-color: var(--dark-mode-clr, var(--default-dark-mode-clr) );
+}
+
+.light-mode{
+	background-color: var(--light-mode-clr, var(--default-light-mode-clr) );	
+
+}
+
+
+
+
+
+
+.light-dark-mode-change{
+	/* height: 100vh; */
+	/* width: 100px; */
+
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+	
+}
