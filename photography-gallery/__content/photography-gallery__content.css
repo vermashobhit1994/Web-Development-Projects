@@ -1,0 +1,49 @@
+@import url("__content--configure.css");
+
+
+.phtotography-gallery__content img{
+	
+	
+	pointer-events: var(--content-pointer-events);
+}
+
+.phtotography-gallery__content{
+
+	
+	text-align: var(--content-text-align);
+}
+
+.phtotography-gallery__content h2{
+	
+	
+	font-size: var(--content-h2-font-size);
+	 font-weight: var(--content-h2-font-weight);
+}
+.phtotography-gallery__content p{
+	
+	
+	font-size: var(--content-p-font-size);
+	font-weight: var(--content-p-font-weight);
+}
+
+
+
+
+/* dark mode  */
+.photography-gallery_dark-mode.phtotography-gallery__content{
+
+
+	color: var(--light-mode-clr, var(--default-light-mode-clr))
+}
+
+/* light mode */
+.phtotography-gallery__content:not(.photography-gallery_dark-mode){
+
+	color: var(--dark-mode-clr, var(--default-dark-mode-clr));
+}
+
+
+
+
+
+

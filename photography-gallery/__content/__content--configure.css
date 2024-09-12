@@ -1,0 +1,13 @@
+.phtotography-gallery__content{
+	--content-pointer-events: none;
+
+
+	--content-text-align: center;
+
+	--content-h2-font-size: 2rem;
+	--content-h2-font-weight: 800; 
+
+	
+	--content-p-font-size: 0.8rem;
+	--content-p-font-weight: 500;
+}
