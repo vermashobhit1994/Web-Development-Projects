@@ -1,0 +1,11 @@
+.photography-gallery__navigation-bar {
+  --navigation-bar-display: flex;
+
+  --navigation-bar-anchor-text-decoration: none;
+  --navigation-bar-anchor-alignment: center;
+  --navigation-bar-anchor-color: inherit;
+  --navigation-bar-anchor-font-weight: 700;
+  --navigation-bar-anchor-font-size: 1rem;
+
+  --navigation-bar-anchor-margin-left: 2rem;
+}

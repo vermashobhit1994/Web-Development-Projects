@@ -1,16 +1,52 @@
+
+/* reset the style provided by userStylesheet */
 @import url("./reset.css");
-@import "./light-dark-mode-change/light-dark-mode-change__btn.css";
+
+
+
+
+
+/* header section contents */
+@import url("./__light-dark-mode-change/__light-dark-mode-change__btn.css");
+
+@import url("./__head-section/__navigation-bar/photography-gallery__navigation-bar.css");
+
+
+
+
+
+
 
 
 body{
-	--light-mode-clr : purple;
-	--dark-mode-clr: hsl(0, 0%, 14%);
-	--toggle-btn-border-clr: hsl(0, 0%, 9%);
-		
+	--light-mode-clr: hsl(100, 100%, 100%);
+		--dark-mode-clr: hsl(0, 0%, 14%);
+		--toggle-btn-border-clr: hsl(0, 0%, 9%);
+
+		font-family: "Open Sans", sans-serif;
+
+
+	
+	
+}
+
+.photography-gallery{
+	height:  100vh;
 }
 
 header{
-	height: 100vh;
 
+ display: flex;
+
+ align-items: center;
+
+ justify-content: space-between;
+
+  padding-bottom: 1rem;
+ padding-block: 1rem;
+
+
+ 
 }
+
 

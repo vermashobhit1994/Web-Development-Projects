@@ -1,5 +1,5 @@
 
-@import "./light-dark-mode_configure.css";
+@import "__light-dark-mode--configure.css";
 
 .light-dark-mode-change__btn{
    

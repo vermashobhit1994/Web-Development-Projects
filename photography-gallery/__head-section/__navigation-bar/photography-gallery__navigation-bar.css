@@ -1,0 +1,46 @@
+
+@import url("__navigation-bar--configure.css");
+
+.photography-gallery__navigation-bar{
+	
+	display: var(--navigation-bar-display);
+
+
+
+}
+
+.photography-gallery__navigation-bar a{
+
+
+	text-decoration-line: var(--navigation-bar-anchor-text-decoration);
+
+  align-self: var(--navigation-bar-anchor-alignment);
+	color: var(--navigation-bar-anchor-color);
+
+	font-weight: var(--navigation-bar-anchor-font-weight);
+	font-size: var(--navigation-bar-anchor-font-size);
+}
+
+.photography-gallery__navigation-bar a +a{
+
+	
+
+	margin-left: var(--navigation-bar-anchor-margin-left);
+
+}
+
+
+
+.photography-gallery__navigation-bar:not(.photography-gallery_dark-mode){
+  color: var(--dark-mode-clr, var(--default-dark-mode-clr)) ;
+  
+}
+
+
+.photography-gallery__navigation-bar.photography-gallery_dark-mode{
+  color: var(--light-mode-clr, var(--default-light-mode-clr)) ;
+
+
+	
+}
+
