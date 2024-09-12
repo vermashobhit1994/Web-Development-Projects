@@ -6,6 +6,7 @@ import {
   darkModeTextColor,
 	navigationBar,
 	heroSection,
+	content,
 } from "./export-nodes.js";
 
 export function init_app() {
@@ -15,5 +16,7 @@ export function init_app() {
   navigationBar.classList.add(darkModeTextColor);
 
 	heroSection.classList.add(darkModeTextColor);
+
+	content.classList.add(darkModeTextColor);
   
 }

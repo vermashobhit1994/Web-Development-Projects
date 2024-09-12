@@ -7,6 +7,7 @@ import {
   navigationBar,
   lightMode,
 	heroSection,
+	content
 } from "../common/export-nodes.js";
 
 export function modeChange() {
@@ -18,4 +19,8 @@ export function modeChange() {
   navigationBar.classList.toggle(darkModeTextColor);
 
   heroSection.classList.toggle(darkModeTextColor);
+
+	content.classList.toggle(darkModeTextColor);
+  
+
 }

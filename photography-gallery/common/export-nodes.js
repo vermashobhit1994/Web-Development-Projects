@@ -23,6 +23,7 @@ export const navigationBar = document.querySelector(".photography-gallery__navig
 /* hero section node */
 export const heroSection = document.querySelector(".photography-gallery__hero-section");
 
-
+/* images content node */
+export const content = document.querySelector(".phtotography-gallery__content");
 
 
