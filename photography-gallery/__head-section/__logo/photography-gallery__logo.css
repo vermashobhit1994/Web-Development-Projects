@@ -1,0 +1,9 @@
+.photography-gallery__logo{
+	width: 3rem;
+}
+
+
+.photography-gallery__logo img{
+	max-height: 100%;
+	max-width: 100%;
+}
