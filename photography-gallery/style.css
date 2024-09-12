@@ -11,7 +11,8 @@
 @import url("./__head-section/__navigation-bar/photography-gallery__navigation-bar.css");
 @import url("./__head-section/__logo/photography-gallery__logo.css");
 
-
+/* hero section contents */
+@import url("./__hero-section/photography-gallery__hero-section.css");
 
 
 

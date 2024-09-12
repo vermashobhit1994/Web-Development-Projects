@@ -1,24 +1,21 @@
-
-
 import {
   photographyGallery,
   darkMode,
   toggleBtn,
   addLightDarkMode,
   darkModeTextColor,
-	navigationBar,
-	lightMode
+  navigationBar,
+  lightMode,
+	heroSection,
 } from "../common/export-nodes.js";
 
+export function modeChange() {
+  toggleBtn.classList.toggle(addLightDarkMode);
 
-export function modeChange(){
+  photographyGallery.classList.toggle(lightMode);
+  photographyGallery.classList.toggle(darkMode);
 
-	toggleBtn.classList.toggle(addLightDarkMode);
+  navigationBar.classList.toggle(darkModeTextColor);
 
-	photographyGallery.classList.toggle(lightMode);
-	photographyGallery.classList.toggle(darkMode);
-	
-	navigationBar.classList.toggle(darkModeTextColor);
-
+  heroSection.classList.toggle(darkModeTextColor);
 }
-

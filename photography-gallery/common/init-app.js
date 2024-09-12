@@ -5,6 +5,7 @@ import {
   addLightDarkMode,
   darkModeTextColor,
 	navigationBar,
+	heroSection,
 } from "./export-nodes.js";
 
 export function init_app() {
@@ -12,4 +13,7 @@ export function init_app() {
   toggleBtn.classList.add(addLightDarkMode);
 
   navigationBar.classList.add(darkModeTextColor);
+
+	heroSection.classList.add(darkModeTextColor);
+  
 }
