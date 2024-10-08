@@ -11,6 +11,7 @@
 
 	
 	text-align: var(--content-text-align);
+
 }
 
 .phtotography-gallery__content h2{
@@ -24,6 +25,8 @@
 	
 	font-size: var(--content-p-font-size);
 	font-weight: var(--content-p-font-weight);
+
+	
 }
 
 
