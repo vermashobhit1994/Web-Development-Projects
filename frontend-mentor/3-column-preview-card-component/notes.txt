@@ -1,0 +1,43 @@
+how to give margin/padding so that it doesn't cause overflow
+when viewport width < content width?
+
+
+How to give font size such that it would decrease based on 
+viwport width?
+
+why to use em for padding?
+
+
+
+
+
+
+
+1. working of flex-shrink and flex-basis: 100% on two child
+   
+
+   flex-shrink work on content because default behavior of 
+	 flexbox try to put content in single line.
+
+	 if flex-basis = 100%, on each of two child, child try to get width and height both of parent.
+	 
+	 due to flex-shrink, each child height and width gets reduced to fit other child.
+	 
+	 So, result is equal width to both child .
+
+	 if try to put one more child , then equal width to three children.  
+
+2. what happens when flex-direction: column
+   every element becomes block level element.
+	 every element occupy full width. 
+   
+	
+doubts
+Q. 	Do I need to center align when in mobile or just give top margin?
+
+
+
+Design learning 
+1. how to give equal width to child inside parent container using flebox?
+2. preventing content inside a flex item (child) of flex container from going to next line. 
+3. How to increase height of child inside parent?

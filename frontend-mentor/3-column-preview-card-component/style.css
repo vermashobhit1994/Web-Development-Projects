@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   --clr-primary-bright-orange: hsl(31, 77%, 52%);
+   --clr-primary-dark-cyan:  hsl(184, 100%, 22%) ;
+   --clr-primary-very-dark-cyan: hsl(179, 100%, 13%);
+   
+   --clr-neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+   --clr-neutral-very-light-gray :hsl(0, 0%, 95%);
+
+   --font-size-body: 15px;
+
+   --font-weight-300: 300;
+   --font-weight-700: 700;
+
+   --font-family-headings:  "Big Shoulders Display", sans-serif;
+   --font-family-paragraphs: "Lexend Deca", sans-serif; 
+
+   --clr-background-body: var(--clr-neutral-very-light-gray);
+
+   --clr-background-left-component:  var(--clr-primary-bright-orange);
+   --clr-background-center-component :  var(--clr-primary-dark-cyan);
+   --clr-background-right-compartment: var(--clr-primary-very-dark-cyan);
+
+   --clr-paragraphs: var(--clr-neutral-transparent-white);
+
+   --clr-headings: var(--clr-neutral-very-light-gray);
+   --clr-buttons: var(--clr-neutral-very-light-gray); 
+}
+body{
+    background-color: var(--clr-background-body);
+}
+
+main{
+    min-height: 100vh;
+		display: flex;
+		max-width: 100%;
+		padding: 36px;
+}
+
+
+
+.card-container{
+	max-width: 925px;
+
+    display: flex;
+
+
+    border-radius: 8px ;
+		overflow: hidden;
+    
+    color: var(--clr-paragraphs);
+    font-weight: var(--font-weight-300);
+    font-size: var(--font-size-body);
+    
+		margin: auto;
+
+}
+
+
+
+.card-container__left{
+    background-color: var(--clr-background-left-component);
+    padding: inherit;  
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    
+
+    padding: 32px;
+
+
+    
+    
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+
+	
+    
+}
+
+.card-container__center{
+    background-color: var(--clr-background-center-component);
+    padding: inherit;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+
+    padding: 32px;
+
+
+ 
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+}
+
+.card-container__right{
+    background-color: var(--clr-background-right-compartment);
+    /* padding: inherit; */
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    
+    padding: 32px;
+
+    
+    
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+}
+
+.card-container__title{
+    text-transform: uppercase   ;
+    color: var(--clr-headings);
+
+    font-family: var(--font-family-headings);
+    /* margin-bottom: inherit; */
+    
+    font-weight: var(--font-weight-700);
+    padding-block: 32px;
+
+
+}
+
+
+
+
+.card-container__description{
+    
+    font-weight: inherit;
+    line-height: 1.6;
+    font-size: 15px;
+    
+	 padding-bottom: 68px;
+
+		
+}
+
+.card-container__left  .card-container__description{
+    opacity: 0.6;
+}
+
+.card-container__center  .card-container__description{
+    opacity: 0.8;
+}
+
+.card-container__image{
+ max-width: 60px;
+
+}
+
+
+
+.card-container__button{
+    
+    border: none;
+    border-radius: 24px;
+    padding-block: 12px ;
+    padding-inline: 32px;
+    background-color: var(--clr-buttons);
+    font-weight: 400;
+    font-family: inherit;
+
+ 
+		margin-top: auto;
+
+		margin-right: auto;
+		white-space: nowrap;
+}
+
+
+.card-container__left > .card-container__button {
+    color: var(--clr-background-left-component);
+       
+}
+
+.card-container__center > .card-container__button {
+    color: var(--clr-background-center-component);
+       
+}
+
+.card-container__right > .card-container__button {
+    color: var(--clr-primary-very-dark-cyan);
+
+       
+}
+
+.card-container__button:hover{
+    /* background-color: transparent; */
+    cursor: pointer;
+    
+   background-color: transparent;
+    color: var(--clr-neutral-transparent-white);
+    border:2px solid var(--clr-neutral-transparent-white);  
+}
+
+
+@media screen and (max-width: 700px){
+    .card-container{
+            flex-direction: column;
+            /* margin-block: calc(100% - 2* 10px); */
+            
+            
+    }
+    
+    .card-container__description   {
+        /* min-height:20vh; */
+    }
+}
+
+
+*{
+	/* outline: 2px solid black;	 */
+}
