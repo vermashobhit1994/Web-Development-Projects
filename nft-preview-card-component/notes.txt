@@ -1,0 +1,28 @@
+How to give margin from left and right which change based on viewport width?
+100% - 2 * var(--card-container-margin)
+total size - margin required x 2
+
+
+How to give font size based on viewport width?
+as percent of vw 
+eg 4vw
+
+How to give image size based on viewport width?
+as percent of vw 
+eg 4vw
+
+
+How to give multiple box shadow?
+separate them using commas
+
+
+How to put a background over an image?
+parent - relative position
+child - absolute position
+put child over parent - top =0, left=0, right=0, bottom =0
+
+
+How to give style to different text inside a paragraph
+wrap into span tag
+classname > :nth-child(n)
+where n is number of times to be styled 

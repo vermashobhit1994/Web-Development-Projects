@@ -1,0 +1,259 @@
+*, 
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*{
+    --clr-primary-soft-blue:  hsl(215, 51%, 70%);
+    --clr-primary-cyan: hsl(178, 100%, 50%);
+
+
+    --clr-neutral-dark-blue-600: hsl(217, 54%, 11%);
+    --clr-neutral-dark-blue-500: hsl(216, 50%, 16%);
+    --clr-neutral-very-dark-blue-300: hsl(215, 32%, 27%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+
+    --font-size-body: 100% - 4vw ;
+
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-600: 600;
+
+    --font-family: "Outfit", sans-serif;
+
+
+    --clr-main-background: var(--clr-neutral-dark-blue-600);
+    --clr-card-background: var(--clr-neutral-dark-blue-500);
+    --clr-card-line: var(--clr-neutral-very-dark-blue-300); 
+
+
+    --padding-card: 2rem;
+    --card-container-margin: 32px;
+    --card-width: 350px;
+    
+}
+
+
+body{
+    background-color: var(--clr-main-background);
+    
+}
+main{
+    height:100vh;;
+ 
+}
+
+.card-container{
+    display: flex;
+    min-height: 100%;
+}
+
+@media screen and (max-width: 400px ){
+        .card{
+            width: calc(100% - 2 * var(--card-container-margin));
+            
+        }
+        .card__content{
+            font-size: 4vw ;
+        }
+        .card__creator-container img{
+            width: 10vw;
+        }
+        
+}
+
+.card{
+    margin: auto;
+    
+    max-width: var(--card-width);
+    
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+
+    background-color: var(--clr-card-background);
+    
+    
+    
+    
+
+    border-radius: 16px;
+
+    
+    box-shadow: 0px 40px 0px 20px  rgb(12,23,41),
+                0px 48px 36px 48px rgb(12,23,35);
+                 
+
+    padding: var(--padding-card);
+    
+}
+
+
+
+.card__content{
+    margin-top: 16px;
+    margin-bottom: 8px;
+    
+}
+
+.card__img-container{
+    position: relative;
+    
+    
+}
+
+.card__img{
+
+    max-width: 100%;
+    border-radius: 8px;
+    min-height: 100%;
+    
+}
+
+.card__img-container:hover::before{
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    background-image: url("./images/icon-view.svg");
+    background-repeat: no-repeat;
+
+
+    background-position-x: center;
+    background-position-y: center;
+    
+
+    z-index: 2;
+    overflow: hidden;
+}
+
+.card__img-container:hover::after{
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    
+    top: 0px;
+    bottom: 5px;
+    
+    left: 0px;
+    right: 0px;
+
+    
+    background-color: var(--clr-primary-cyan);
+    opacity: 0.45;
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    
+}
+
+
+
+
+.card__title{
+    color: var(--clr-neutral-white);
+    font-size:inherit;
+    font-weight: var(--font-weight-600);
+    margin-block: inherit;
+}
+
+.card__title:hover{
+    color: var(--clr-primary-cyan);
+    cursor:pointer;
+}
+
+.card__description{
+    color: var(--clr-primary-soft-blue);
+    font-size: inherit;
+    font-weight: var(--font-weight-300);
+    margin-block: inherit;
+}
+
+
+
+.card__ethereum-container{
+    display: flex;
+    justify-content: space-between;
+    margin-block: inherit; 
+    flex-wrap: wrap;
+    
+
+    
+}
+.card__ethereum-details{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+
+
+}
+.card__ethereum-current-value{
+    color: var(--clr-primary-cyan);
+}
+
+
+
+.card__ethereum-duration{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    color: var(--clr-primary-soft-blue);
+    font-weight: var(--font-weight-300);
+    font-size: inherit;
+
+    
+}
+
+
+
+
+
+.line-break{
+    margin-block: inherit;
+    width: 100%;
+    height: 0.5px;
+    background-color: var(--clr-card-line);
+}
+
+
+
+.card__creator-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-block: inherit;
+    flex-wrap: wrap;
+}
+
+
+.card__creator-container img{
+    max-width: 32px;
+    border: 1px solid var(--clr-neutral-white);
+    border-radius: 50%;
+   
+}
+.card__creator-text{
+    font-size: inherit;
+}
+.card__creator-text > :nth-child(1){
+    color: var(--clr-primary-soft-blue);
+}
+
+.card__creator-text > :nth-child(2){
+    color:var(--clr-neutral-white);
+}
+
+.card__creator-text > :nth-child(2):hover{
+    color: var(--clr-primary-cyan);
+    cursor:pointer;
+}
+
