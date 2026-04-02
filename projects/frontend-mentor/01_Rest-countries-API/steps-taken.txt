@@ -37,4 +37,24 @@ Step3 - API to access data
 
 use README.md file to get link for API 
 
-Step4 - 
+Step4 - creating header
+why to use?
+<header> tag represents introductory content
+It may contains
+1. h1 to h6 elements 
+2. hgroup element
+3. relevant logos 
+
+according to specification, h1 to h6 represents heading of sections.
+and if document contains one or more headings, at least single heading 
+within outline should have a heading level of 1
+
+Step4-1: linking google fonts 
+
+box-sizing: border-box;
+total size of element also include padding and margin and it doesn't 
+increase size of element box 
+
+step4-2: 
+
+
