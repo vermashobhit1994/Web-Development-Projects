@@ -1,0 +1,4 @@
+The file contains best practices for code readability and maintainability
+
+1. add block of comments between logical sections in stylesheet.
+   use any string (Eg || ) to search for sections in stylesheet

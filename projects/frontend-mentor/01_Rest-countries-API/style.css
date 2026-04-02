@@ -1,7 +1,9 @@
+/* || GENERAL STYLES */
 *{
     box-sizing: border-box;    
 }   
 
+/* || TYPOGRAPHY for webpage  */
 html{
     /* change 1rem = 14px*/
     font-size: 14px; 
@@ -16,6 +18,7 @@ body{
        14px -> 14 x (1/16) */
 }
 
+/* HEADER TYPOGRAPHY  */
 h1{
     font-size: 1rem;
 }
@@ -41,3 +44,4 @@ h1{
     max-width: 1280px;
     margin-inline: auto;
 }
+
