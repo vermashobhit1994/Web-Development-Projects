@@ -1,0 +1,40 @@
+The file contains steps taken from beginning to
+finishing frontend mentor challenge.
+
+project name - REST countries API
+
+features/functionality implemented
+- to be understood only
+
+Step1 - downloading files
+why to download? 
+1. contains UI design files.
+2. contains style guide 
+   - fonts 
+   - color 
+   - design width
+   - responsive design 
+   - icons
+   
+What it contains?
+1. design files
+2. style guide 
+
+How to download?
+To be remembered
+
+Step2 - understand design files 
+
+what I understood?
+1. light/dark mode 
+2. 5 details on homepage for each country 
+3. 11 details for each country page 
+
+technical terms
+1. drop down
+
+Step3 - API to access data 
+
+use README.md file to get link for API 
+
+Step4 - 
