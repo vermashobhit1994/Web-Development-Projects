@@ -1,0 +1,135 @@
+/* || GENERAL STYLES */
+main{
+    padding-inline: 0px;
+    /* outline: 1px solid yellow;     */
+}
+
+/* || BACK-BUTTON STYLE */
+.back-btn{
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0,0.2);
+    padding:8px 30px;
+    margin-block: 4rem;
+    margin-left: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    /* outline: 1px solid rebeccapurple; */
+}
+
+/* || COUNTRY-DETAILS STYLE */
+.country-details-container{
+    display: flex;
+    align-items: center;
+    column-gap: 5.5rem;
+    /* outline: 1px solid red; */
+    max-width: 1280px;
+}
+
+
+/* || FLAG-IMAGE STYLE */
+.country-flag-container{
+    max-width: 25rem;
+    /* outline: 1px solid darkgoldenrod; */
+}
+
+.country-flag-container img{
+    width: 100%; 
+}
+
+
+.details-text-container{
+    /* outline: 1px solid darkgreen; */
+    width: 100%;
+}
+
+.details-text{
+    /* outline :1px solid darkred; */
+
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-auto-flow: column;    
+    column-gap: 3rem;
+    row-gap: 1rem;
+}
+
+
+
+
+.details-text p{
+    /* padding-block: clamp(0.1vw, 0.01vw, 6vw); */
+    margin-block: 0px;
+        
+}
+
+@media(max-width: 800px){
+    .details-text{
+        grid-template-rows: 1fr;
+        grid-auto-flow: row;
+    }
+    .details-text p:nth-child(5){
+        margin-bottom: 2.5rem;
+    }
+    .country-details-container{
+        display: block;
+    }
+
+    .country-flag-container{
+        max-width: 100%;
+    }
+    .border-countries-text{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1.5rem;
+    }
+    
+}
+
+@media(max-width: 380px){
+    .back-btn{
+        font-size: clamp(2vw, 1rem, 6vw);
+        padding: clamp(2vw, 1rem, 6vw);
+    }
+    main{
+        font-size: clamp(2vw, 1rem, 6vw);
+    }
+    .header-content *{
+        font-size: clamp(2vw, 1rem, 6vw);
+    }
+}
+
+.border-countries-container{
+    /* border:1px solid red; */
+    margin-top: 32px;
+
+    
+}
+
+
+.border-countries-text a{
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0,0.3);
+    margin-right: 8px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* @media(max-width: 800px){
+    .country-details-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .details-text{
+        display: block;
+    }
+    .details-text p{
+        margin-block: 8px;
+    }
+
+    .border-countries-container {
+        display: block;
+        margin-top: 64px;
+    }
+    .border-countries-text{
+        margin-block: 16px;
+    }
+    
+} */
