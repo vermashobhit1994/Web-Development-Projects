@@ -2,7 +2,10 @@
 const backBtn = document.querySelector(".back-btn")
 backBtn.href = "#"
 
-
+backBtn.addEventListener("click" , (ev) => {
+    // console.log(ev.target)
+    window.history.back()
+})
 
 
 
@@ -322,8 +325,6 @@ if(!isRequestSent){
                 .then((countryNamesDetails)=> {
 
                     const borderCountryNamesTag = document.createElement('a')
-                    const filepath = window.location.pathname ;
-                    console.log(filepath)
                     borderCountryNamesTag.href = `${window.location.origin}${window.location.pathname}?name=${countryNamesDetails.name.common}`
                     borderCountryNamesTag.innerText = `${countryNamesDetails.name.common}`
 
