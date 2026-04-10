@@ -322,7 +322,9 @@ if(!isRequestSent){
                 .then((countryNamesDetails)=> {
 
                     const borderCountryNamesTag = document.createElement('a')
-                    borderCountryNamesTag.href = "#"
+                    const filepath = window.location.pathname ;
+                    console.log(filepath)
+                    borderCountryNamesTag.href = `${window.location.origin}${window.location.pathname}?name=${countryNamesDetails.name.common}`
                     borderCountryNamesTag.innerText = `${countryNamesDetails.name.common}`
 
                     borderCountriesText.append(borderCountryNamesTag)
