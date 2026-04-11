@@ -81,6 +81,9 @@ main{
         flex-wrap: wrap;
         margin-top: 1.5rem;
     }
+    .back-btn{
+        margin-left: 24px;
+    }
     
 }
 
