@@ -3,7 +3,6 @@ const backBtn = document.querySelector(".back-btn")
 backBtn.href = "#"
 
 backBtn.addEventListener("click" , (ev) => {
-    // console.log(ev.target)
     window.history.back()
 })
 
