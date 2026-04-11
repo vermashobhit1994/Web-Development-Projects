@@ -2,6 +2,7 @@
 main{
     padding-inline: 0px;
     /* outline: 1px solid yellow;     */
+    background-color: hsl(0, 0%, 99%);
 }
 
 /* || BACK-BUTTON STYLE */
@@ -29,7 +30,7 @@ main{
 /* || FLAG-IMAGE STYLE */
 .country-flag-container{
     max-width: 25rem;
-    /* outline: 1px solid darkgoldenrod; */
+    outline: 1px solid hsl(0, 0%, 50%);
 }
 
 .country-flag-container img{
