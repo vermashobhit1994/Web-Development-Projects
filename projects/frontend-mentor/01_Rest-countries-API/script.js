@@ -119,14 +119,14 @@ function searchCountries(){
     const searchInput = document.querySelector(".search-country input");
     
     searchInput.addEventListener("input", (e) => {
-        const searchedValue = e.target.value;
+        const searchedValue = e.target.value.toLowerCase();
+        
         
     
         if(allCountriesData){
             const filteredCountries = allCountriesData.filter((country) => {
                 return country.name.common.toLowerCase().includes(searchedValue)
             })
-            console.log(filteredCountries)
             
             // clear previous output 
             countriesContainer.innerHTML = ""
