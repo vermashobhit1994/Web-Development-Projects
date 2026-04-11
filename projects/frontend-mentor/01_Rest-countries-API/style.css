@@ -59,6 +59,22 @@ a{
     gap: 4rem;
     flex-wrap: wrap;
 }
+
+@media (max-width: 670px){
+    .countries-container{
+        justify-content: center;
+    }
+    main{
+        margin-inline: 24px;
+    }
+    .header-content{
+        margin-inline: 24px;
+    }
+    .filter-by-region{
+        margin-left:0px;
+    }
+}
+
 .card-text{
     padding-inline: 16px;
     margin-bottom: 3rem;
@@ -103,25 +119,43 @@ a{
     margin-block:8px;
 }
 
-
+/* || SEARCH AND FILTER */
 .search-country{
     margin-left: 3.5rem;
     display: flex;
     margin-block: 2rem;
     border-radius: 4px;
     box-shadow: 0 0 8px 0px rgb(0,0,0,0.3);
-    max-width: 30rem;
    padding-inline: 1.5rem;
     padding-block: 1rem;
+    max-width: 25rem;
+    flex-grow: 1;
+}
+
+@media (max-width: 670px){
+    .search-country{
+        flex-grow: 1;
+        max-width: 100%;
+        margin-inline: 24px;
+    }
+    .search-country input[type='text']{
+        font-size: 1rem;
+    }
+    .filter-by-region{
+        max-width: 100%;
+        margin-left: 24px;
+        
+    }
 
 }
+
 .search-country input{
     background: transparent;
     border: none;  
     outline: none;
-    width: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-left: 1rem;
+    max-width: 100%;
 }
 
 .countries-not-found{
@@ -131,4 +165,21 @@ a{
     border-radius: 4px;
     font-weight: 800;
 
+}
+.search-filter-country{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 3.5rem;
+    align-items: center;
+}
+.search-filter-country select{
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,0.3);
+    border-radius: 4px;
+    
+    
 }

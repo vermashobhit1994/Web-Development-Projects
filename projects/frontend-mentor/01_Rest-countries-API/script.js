@@ -1,4 +1,7 @@
 const countriesContainer = document.querySelector(".countries-container");
+const title =document.querySelector('.title')
+
+
 
 let allCountriesData = null;
 
@@ -12,6 +15,7 @@ fetch(
 
 function renderCountries(data) {
     data.forEach((country) => {
+        
         
         // if (country?.name?.nativeName) {
         //     const nativeNames = Object.values(country?.name?.nativeName);
@@ -141,4 +145,25 @@ function searchCountries(){
     });
 }
 
+function filterByRegion(){
+    const filterByRegion = document.querySelector('.filter-by-region')
+    filterByRegion.addEventListener('change', (e) => {
+        if(e.target.value){
+            // search by region using API
+            fetch(`https://restcountries.com/v3.1/region/${e.target.value}`)
+            .then((resp) => resp.json())
+            .then((data) => {
+                // clear previous output 
+                countriesContainer.innerHTML = ""
+                renderCountries(data)
+                console.log(data)
+            })
+        }
+        
+    })
+}
+
+
+
 searchCountries()
+filterByRegion()
