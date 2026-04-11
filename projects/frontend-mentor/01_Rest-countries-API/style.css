@@ -30,7 +30,18 @@ h1{
 .light-dark-mode-btn{
     border: none;
     background: none;
+    cursor: pointer;
+    
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
+
+.light-dark-mode-btn svg{
+    max-width: 15px;
+}
+
 
 .header-container{
     box-shadow: 0px 2px 4px 0px rgb(0,0,0,0.2);    
@@ -155,7 +166,7 @@ a{
     outline: none;
     font-size: 1rem;
     padding-left: 1rem;
-    max-width: 100%;
+    width: 100%;
 }
 
 .countries-not-found{
@@ -183,3 +194,32 @@ a{
     
     
 }
+
+
+body.dark{
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 100%, 100%);
+}
+
+.header-content.dark button{
+    color: hsl(0, 100%, 100%);
+}
+
+.country-card.dark, 
+.search-country.dark, 
+.filter-by-region.dark{
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 100%, 100%);
+}
+.search-country.dark input{
+    color: hsl(0, 100%, 100%);
+}
+
+.countries-container.dark .country-card{
+    background-color: hsl(209, 23%, 22%);
+}
+
+
+
+
+

@@ -55,6 +55,4 @@ box-sizing: border-box;
 total size of element also include padding and margin and it doesn't 
 increase size of element box 
 
-step4-2: 
-
-
+step4-2:
