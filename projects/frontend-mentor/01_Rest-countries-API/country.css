@@ -1,9 +1,28 @@
+body{
+    --background-color: hsl(0, 0%, 99%);
+    --text-color: hsl(200, 15%, 8%);
+    --elements-color: hsl(0, 100%, 100%);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.dark{
+    --background-color: hsl(207, 26%, 17%);
+    --text-color: hsl(0, 100%, 100%);
+    --elements-color: hsl(209, 23%, 22%);
+
+}
+
 /* || GENERAL STYLES */
 main{
     padding-inline: 0px;
     /* outline: 1px solid yellow;     */
     background-color: hsl(0, 0%, 99%);
+    
 }
+
+
 
 /* || BACK-BUTTON STYLE */
 .back-btn{
@@ -14,6 +33,7 @@ main{
     display: inline-flex;
     align-items: center;
     border-radius: 4px;
+    background-color: var(--elements-color);
     /* outline: 1px solid rebeccapurple; */
 }
 
@@ -24,7 +44,10 @@ main{
     column-gap: 5.5rem;
     /* outline: 1px solid red; */
     max-width: 1280px;
+
+    background-color: var(--elements-color);
 }
+
 
 
 /* || FLAG-IMAGE STYLE */
@@ -142,3 +165,18 @@ main{
     }
     
 } */
+
+
+.body.dark{
+     background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 100%, 100%);
+}
+
+.back-btn.dark, 
+.country-details-container.dark{
+    background-color: hsl(209, 23%, 22%);
+}
+
+.header-content.dark button{
+    color: hsl(0, 100%, 100%);
+}

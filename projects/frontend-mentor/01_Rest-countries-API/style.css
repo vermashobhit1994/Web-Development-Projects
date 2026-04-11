@@ -1,3 +1,5 @@
+
+
 /* || GENERAL STYLES */
 *{
     box-sizing: border-box;    
@@ -11,11 +13,26 @@ html{
 
 
 body{
+    --background-color: hsl(0, 0%, 99%);
+    --text-color: hsl(200, 15%, 8%);
+    --elements-color: hsl(0, 100%, 100%);
+
     margin: 0px;
     font-family: Nunito,sans-serif;
     /* 16px -> 1rem
        1px  -> 1/16
        14px -> 14 x (1/16) */
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+       
+}
+
+body.dark{
+    --background-color: hsl(207, 26%, 17%);
+    --text-color: hsl(0, 100%, 100%);
+    --elements-color: hsl(209, 23%, 22%);
+
 }
 
 /* HEADER TYPOGRAPHY  */
@@ -35,7 +52,12 @@ h1{
     display: flex;
     align-items: center;    
     max-width: 8rem;
+
+    background-color: var(--elements-color);
+    color: var(--text-color);
 }
+
+
 
 .light-dark-mode-btn:nth-child(2){
     width: 100%;
@@ -47,7 +69,8 @@ h1{
 
 
 .header-container{
-    box-shadow: 0px 2px 4px 0px rgb(0,0,0,0.2);    
+    box-shadow: 0px 2px 4px 0px rgb(0,0,0,0.2);
+    background-color: var(--elements-color);    
 }
 
 .header-content{
@@ -102,6 +125,7 @@ a{
 
     transition: transition 0.2s ease-in-out;
     transition: box-shadow 0.2s ease-in-out;
+    background-color: var(--elements-color);    
 }
 
 .img-container{
@@ -144,6 +168,8 @@ a{
     padding-block: 1rem;
     max-width: 25rem;
     flex-grow: 1;
+    background-color: var(--elements-color);
+    
 }
 
 @media (max-width: 670px){
@@ -163,6 +189,10 @@ a{
 
 }
 
+.search-country svg{
+    fill: var(--text-color);
+}
+
 .search-country input{
     background: transparent;
     border: none;  
@@ -170,6 +200,8 @@ a{
     font-size: 1rem;
     padding-left: 1rem;
     width: 100%;
+    color: var(--text-color);
+    
 }
 
 .countries-not-found{
@@ -194,12 +226,14 @@ a{
     border: none;
     box-shadow: 0 0 8px 0px rgb(0,0,0,0.3);
     border-radius: 4px;
+    background-color: var(--elements-color);
+    color: var(--text-color);
     
     
 }
 
 
-body.dark{
+/* body.dark{
     background-color: hsl(207, 26%, 17%);
     color: hsl(0, 100%, 100%);
 }
@@ -220,7 +254,7 @@ body.dark{
 
 .countries-container.dark .country-card{
     background-color: hsl(209, 23%, 22%);
-}
+} */
 
 
 
