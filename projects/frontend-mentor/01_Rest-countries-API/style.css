@@ -32,7 +32,8 @@ h1{
     background: none;
     cursor: pointer;
     
-    
+    display: flex;
+    align-items: center;    
     max-width: 8rem;
 }
 
