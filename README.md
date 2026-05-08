@@ -1,5 +1,5 @@
 # Below are website links for projects
-1. [content broadcasting system] (https://content-broadcasting.netlify.app/)
+1. [content broadcasting system](https://content-broadcasting.netlify.app/)
 2. [AI Kharcha Hisab](https://aikharchahisab.netlify.app/)
 3. [countries details using api](https://mycountries-details-react.netlify.app/)
 4. [focs on today](https://myfocus-on-today.netlify.app/)
